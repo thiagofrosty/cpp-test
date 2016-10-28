@@ -6,7 +6,7 @@ This test will be about code clarity, problem solving and understanding of the C
 
 ## What will be evaluated
 
-When reviewing your code we are going to focus in the usage of the C++ idioms, usage of STL classes and functions, code consistency, clarity and coherence. If a challenge asks you to solve a problem using an algorithm and/or data strucutre, we want you to pick what C++ has off-the-shelf and use it. We are not looking for code implementing data strucutres and algorithms from the scratch.
+When reviewing your code we are going to focus in the usage of the C++ idioms, usage of STL classes and functions, code consistency, clarity and coherence. If a challenge asks you to solve a problem using an algorithm and/or data structure, we want you to pick what C++ has off-the-shelf and use it. We are not looking for code implementing data structures and algorithms from the scratch.
 
 If you want to use C++11/14/1z, Boost or another library to solve any of the tests, you are allowed to do so. Just remember this is a CMake based project and you need to take care of the newly introduced dependencies before submitting your pull request.
 
@@ -51,7 +51,7 @@ $ ctest -R <test> -V
 
 CTest will show you which one of the test cases failed. You are free to look at the tests cases to better understand what is required to make it pass. Don't forget to build the code before running the tests.
 
-## Aditional notes
+## Additional notes
 
 Everything here was developed and tested in a unix-like environment. We didn't ensure it would run on Windows platforms, but if you are feeling adventurous, there is nothing preventing you to do so (but you will be on your own).
 
