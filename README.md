@@ -2,20 +2,20 @@
 
 Welcome to the CINQ hiring test for C++ developers. Please fork this repository and submit a pull request once you have finished this set of coding challenges.
 
-This test will be about code clarity, problem solving and understanding of the C++ language. There are ten challenges that need to be solved, each one with its' own constraints and test cases.
+This test will be about code clarity, problem solving and understanding of the C++ language. There are ten challenges that need to be solved, each one with its own constraints and test cases.
 
 ## What will be evaluated
 
 When reviewing your code we are going to focus in the usage of the C++ idioms, usage of STL classes and functions, code consistency, clarity and coherence. If a challenge asks you to solve a problem using an algorithm and/or data strucutre, we want you to pick what C++ has off-the-shelf and use it. We are not looking for code implementing data strucutres and algorithms from the scratch.
 
-If you want to use C++11/14/1z, Boost or another library to solve any of the tests you are allowed to do so. Just remember this is a CMake based project and you need to take care of the newly introduced dependencies before submitting your pull request.
+If you want to use C++11/14/1z, Boost or another library to solve any of the tests, you are allowed to do so. Just remember this is a CMake based project and you need to take care of the newly introduced dependencies before submitting your pull request.
 
 ## Dependencies
 
 * Bash
 * CMake
 * Diff
-* A C++ compiler.
+* A C++ compiler (like G++ or clang).
 
 ## Solving the tests
 
@@ -51,4 +51,7 @@ $ ctest -R <test> -V
 
 CTest will show you which one of the test cases failed. You are free to look at the tests cases to better understand what is required to make it pass. Don't forget to build the code before running the tests.
 
+## Aditional notes
+
+Everything here was developed and tested in a unix-like environment. We didn't ensure it would run on Windows platforms, but if you are feeling adventurous, there is nothing preventing you to do so (but you will be on your own).
 
