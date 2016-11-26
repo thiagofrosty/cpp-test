@@ -12,7 +12,17 @@ Processo Seletivo CINQ
 #include <vector>
 
 #define CAMPOS_NUM 5
+#define STRING_INICIO 0
 using namespace std;
+
+enum CAMPO
+{
+	nome = 0,
+	estado,
+	cidade,
+	pais,
+	idade
+};
 
 int main(int argc, char** argv)
 {
@@ -31,12 +41,11 @@ int main(int argc, char** argv)
 		for(int i = 0; i < CAMPOS_NUM; i++)
 		{
 			virgula = linha.find(",");
-			campo[i] = linha.substr(0,virgula);
-			linha.erase(0,campo[i].length()+1);
+			campo[i] = linha.substr(STRING_INICIO,virgula);
+			linha.erase(STRING_INICIO,campo[i].length()+1);
 		}
 
-		cout << campo[0] << " is " << campo[4] << " years old and lives in " << campo[2] << ", " << campo[1] << "." << endl;
-
+		cout << campo[nome] << " is " << campo[idade] << " years old and lives in " << campo[cidade] << ", " << campo[estado] << "." << endl;
 	}
 
 	return 0;
